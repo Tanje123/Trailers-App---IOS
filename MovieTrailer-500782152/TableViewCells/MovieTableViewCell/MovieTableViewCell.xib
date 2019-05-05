@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MovieTableViewCell" id="gd1-I2-M5B" customClass="MovieTableViewCell" customModule="MovieTrailer_500782152" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maz-MZ-3Fq">
+                    <rect key="frame" x="20" y="10" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="maz-MZ-3Fq" secondAttribute="height" multiplier="1:1" id="OIW-rr-adm"/>
+                        <constraint firstAttribute="height" constant="150" id="UJ6-16-d8P"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov2-jP-Cf9">
+                    <rect key="frame" x="190" y="70" width="280" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JLG-M8-2L2" firstAttribute="bottom" secondItem="maz-MZ-3Fq" secondAttribute="bottom" priority="250" constant="10" id="3Tv-Sh-9ex"/>
+                <constraint firstItem="ov2-jP-Cf9" firstAttribute="centerY" secondItem="maz-MZ-3Fq" secondAttribute="centerY" id="AWk-4o-hpk"/>
+                <constraint firstItem="maz-MZ-3Fq" firstAttribute="top" secondItem="JLG-M8-2L2" secondAttribute="top" constant="10" id="Ay5-GO-U1q"/>
+                <constraint firstItem="JLG-M8-2L2" firstAttribute="trailing" secondItem="ov2-jP-Cf9" secondAttribute="trailing" constant="20" id="WvK-j1-oXf"/>
+                <constraint firstItem="ov2-jP-Cf9" firstAttribute="leading" secondItem="maz-MZ-3Fq" secondAttribute="trailing" constant="20" id="ZrF-18-zbs"/>
+                <constraint firstItem="maz-MZ-3Fq" firstAttribute="leading" secondItem="JLG-M8-2L2" secondAttribute="leading" constant="20" id="weJ-iK-New"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="JLG-M8-2L2"/>
+            <connections>
+                <outlet property="TrailerImage" destination="maz-MZ-3Fq" id="8BS-0f-8kN"/>
+                <outlet property="nameLabel" destination="ov2-jP-Cf9" id="5PI-oM-Mu9"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="-49.475262368815599"/>
+        </view>
+    </objects>
+</document>
